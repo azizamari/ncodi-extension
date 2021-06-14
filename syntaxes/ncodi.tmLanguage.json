@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
-		}
+		},
+        {
+            "include": "#numeric"
+        }
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ncodi",
-				"match": "\\b(true|false)\\b"
+				"match": "\\b(true|false|const|var|if|else|while|for|to|do|def|break|continue|return|madem|kan|wela|dir|yezzi|kamel|s7i7|ghalet|men|ila|raje3)\\b"
 			}]
 		},
 		"strings": {
@@ -26,7 +29,11 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+        "numerics":{
+            "name":"constant.numeric",
+            "match": "^[0-9]*$"
+        }
 	},
 	"scopeName": "source.ncodi"
 }
