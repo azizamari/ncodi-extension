@@ -1,0 +1,25 @@
+{
+    "name": "ncodi",
+    "displayName": "Ncodi",
+    "description": "Ncodi Programming Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ncodi",
+            "aliases": ["Ncodi", "ncodi"],
+            "extensions": [".ncodi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ncodi",
+            "scopeName": "source.ncodi",
+            "path": "./syntaxes/ncodi.tmLanguage.json"
+        }]
+    }
+}
